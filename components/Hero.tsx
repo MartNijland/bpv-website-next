@@ -91,7 +91,16 @@ return (
                 </motion.button>
                 </Link>
                 <Link href='#slotwoord'>
-                <button className='hero-btn'>Slotwoord</button>
+                <motion.button 
+                whileHover={{
+                    scale: 1.1,
+                }}
+                transition={{
+                    duration: 0.1
+                }}
+                className='hero-btn'>
+                    Slotwoord
+                </motion.button>
                 </Link>
             </div>
         </div>
