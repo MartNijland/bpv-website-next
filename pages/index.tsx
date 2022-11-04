@@ -13,10 +13,12 @@ import BpvTaakEen from '../components/BpvTaakEen'
 const Home: NextPage = () => {
 
   const { scrollYProgress } = useScroll();
-
+  
   
 
   return (
+
+    
 
     // <div className='h-screen'>
     //       <motion.div
