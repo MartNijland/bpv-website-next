@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { Link } from "react-router-dom"
-// import { useEffect, useState } from "react"
 import Head from 'next/head'
 import Headers from '../components/Headers'
 import Hero from '../components/Hero'
@@ -8,7 +7,6 @@ import Informatie from '../components/Informatie'
 import KlantenProducten from '../components/KlantenProducten'
 import Products from '../components/Products'
 import { motion, useScroll } from "framer-motion";
-import ParticleArea from '../components/ParticleArea'
 import OrgChart from '../components/OrgChart'
 import BpvTaakEen from '../components/BpvTaakEen'
 
