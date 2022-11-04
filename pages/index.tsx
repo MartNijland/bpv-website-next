@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { Link } from "react-router-dom"
 // import { useEffect, useState } from "react"
 import Head from 'next/head'
 import Headers from '../components/Headers'
@@ -9,6 +10,7 @@ import Products from '../components/Products'
 import { motion, useScroll } from "framer-motion";
 import ParticleArea from '../components/ParticleArea'
 import OrgChart from '../components/OrgChart'
+import BpvTaakEen from '../components/BpvTaakEen'
 
 const Home: NextPage = () => {
 
@@ -25,7 +27,7 @@ const Home: NextPage = () => {
     //   />
 
       
-      <div className="bg-[#18232E] text-white h-screen snap-y snap-mandatory overflow-auto scrollbar scrollbar-thumb-[#7962FA] scrollbar-track-[#1f2c3a]">
+      <div className="bg-[#18232E] text-white h-screen snap-y snap-mandatory overflow-auto scrollbar scrollbar-thumb-[#7962FA] scrollbar-track-[#1f2c3a] pr-10">
 
       {/* <ParticleArea /> */}
 
@@ -50,10 +52,15 @@ const Home: NextPage = () => {
         <section id='products' className='snap-center'>
           <Products />
         </section>
-{/* 
+
         <section className='snap-center'>
           <OrgChart />
-        </section> */}
+        </section>
+
+        <section className='snap-center'>
+          <BpvTaakEen />
+        </section>
+
 
 </div>
 // </div>

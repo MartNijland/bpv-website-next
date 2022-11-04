@@ -24,12 +24,12 @@ const KlantProductCard = (props: Props) => {
         src="https://wirelab2018.s3.amazonaws.com/Brands/Wirelab_Client_grolsch.svg" alt="Grolsch" />
 
         <div className='px-0 md:px-10'>
-            <h4 className='text-4xl font-light'>Beugelprinter</h4>
-            <p className='font-bold font-serif text-2xl mt-1'>GROLSCH</p>
+            <h4 className='md:text-4xl font-light'>Beugelprinter</h4>
+            <p className='font-bold font-serif text-sm md:text-2xl mt-1'>GROLSCH</p>
             <div className=''>
-            <p className='uppercase py-5 text-gray-300'>Optimalisatie en crieeren van een nieuw design</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p>Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p className='uppercase py-5 text-gray-300 text-sm md:text-xl'>Optimalisatie en crieeren van een nieuw design</p>
+            <p className='text-xs md:text-base'>Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p className='text-xs md:text-base'>Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
             </div>
         </div>
     </article>

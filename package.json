@@ -16,9 +16,10 @@
     "npm-git-install": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^6.4.3",
     "react-simple-typewriter": "^4.0.5",
     "react-social-icons": "^5.15.0",
-    "react-tsparticles": "^2.3.3",
+    "react-tsparticles": "^2.4.0",
     "save": "^2.9.0"
   },
   "devDependencies": {
