@@ -39,14 +39,11 @@ const BpvTaakEen = ({bpvTaakEenHeader, bpvTaakEenTekst, bpvTaakEenPageTitle}: Pr
         </p>
     </div>
 
-    <div className="hidden md:w-[80%] md:h-[50%]">
+    <div className="hidden md:block md:w-[80%] md:h-[50%]">
             <Canvas
             style={{ height: "600px", width: "550px"}}
-            className='hidden -mb-20 md:mb-0 md:visible md:flex-shrink-0 w-0 h-0 rounded-full object-cover
+            className='hidden md:block -mb-20 md:mb-0 md:visible md:flex-shrink-0 w-0 h-0 rounded-full object-cover
             md:rounded-lg md:w-24 md:h-95 xl:w-[500px] xl:h-[650px] md:mt-20'
-                camera={{ 
-                    
-                }}
             >        
                 <ReactThree />
             </Canvas>
