@@ -28,7 +28,7 @@ type Props = {}
 const OrgChart = (props: Props) => {
     return (
         <div className='p-10 h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto my-auto items-center z-0'>
-                <h3 className='absolute  top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Organogram</h3>
+                <h3 className='absolute  top-24 uppercase tracking-[20px] text-gray-500 md:text-2xl'>Organogra<span className='tracking-[0px]'>m</span></h3>
             <div className="h-screen relative  flex overflow-hidden flex-row max-w-full justify-center mx-auto items-center top-36 xl:top-64">
                 <svg className=" w-full h-full" viewBox='0 0 1000 1000'>
                     <Person cx={650} cy={100} name="Harry" job="Eindbaas" />

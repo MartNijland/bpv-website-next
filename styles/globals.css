@@ -8,6 +8,9 @@
         hover:border-purple-500/60 hover:text-purple-500/60
     }
 }
+
+
+
 body {
     --black: #111111;
     --white: #fdfdfd;
@@ -21,6 +24,9 @@ body {
   
     --background: var(--white);
     --accent: var(--black);
+
+    cursor:none;
+    overflow:hidden;
 }
 
 .progress-bar {
@@ -32,4 +38,20 @@ body {
     background: var(--red);
     transform-origin: 0%;
   }
-  
+
+.htmlScreen iframe
+{
+    overflow: hidden;
+    height: 415px;
+    width: 610px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    transform: scale(0.5); 
+    overflow: hidden;
+}
+
+.htmlScreen{
+    height: 220px;
+    width: 30px;
+}
