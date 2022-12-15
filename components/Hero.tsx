@@ -33,7 +33,7 @@ export default function Hero({heroTitles, heading}: Props) {
 //       }
 //   }
 //   `
-//
+
 //   const { error, loading, data } = useQuery(GET_TITLES);
 //   console.log({error, loading, data});
     
