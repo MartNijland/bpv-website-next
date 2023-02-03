@@ -81,7 +81,7 @@ const Home: NextPage = ({ data }: any) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 2000);
   }, []);
 
   const override: CSSProperties = {
