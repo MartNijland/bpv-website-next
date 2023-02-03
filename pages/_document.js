@@ -1,11 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-const USERSNAP_GLOBAL_API_KEY = '359462f5-f80f-49ec-89c3-adab6792907d'
+// const USERSNAP_GLOBAL_API_KEY = '359462f5-f80f-49ec-89c3-adab6792907d'
 
 export default function Document() {
     return (
     <Html>
         <Head />
-        <script
+        {/* <script
             async
             src={`https://widget.usersnap.com/global/load/${USERSNAP_GLOBAL_API_KEY}?onload=onUsersnapCXLoad`}
             />
@@ -19,7 +19,7 @@ export default function Document() {
                 }         
                 `,
             }}
-            />
+            /> */}
         <body>
         <Main />
         <NextScript />
