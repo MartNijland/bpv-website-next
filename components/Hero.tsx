@@ -56,7 +56,7 @@ export default function Hero({ heroTitles, heading }: Props) {
               Bedrijfsinformatie
             </motion.button>
           </Link>
-          <Link href="#taken">
+          <Link href="#klanten">
             <motion.button
               whileHover={{
                 scale: 1.1,
@@ -69,7 +69,7 @@ export default function Hero({ heroTitles, heading }: Props) {
               Klanten van Wirelab
             </motion.button>
           </Link>
-          <Link href="#taken">
+          <Link href="#organogram">
             <motion.button
               whileHover={{
                 scale: 1.1,
@@ -82,7 +82,7 @@ export default function Hero({ heroTitles, heading }: Props) {
               Organogram van het bedrijf
             </motion.button>
           </Link>
-          <Link href="#taken">
+          <Link href="#bpvtaken">
             <motion.button
               whileHover={{
                 scale: 1.1,

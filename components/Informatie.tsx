@@ -67,14 +67,12 @@ const Informatie = ({
 
       <div className="space-y-10 px-0 md:px-10 md:pt-20 ">
         <h4
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
           className="text-xl md:text-6xl md:leading-[50px] uppercase font-bold text-[#7962fa]"
         >
           {headingText}
         </h4>
 
-        <p className="text-xs xl:text-base text-gray-300 font-light">{text}</p>
+        <p className="leading-relaxed text-xs xl:text-sm text-gray-300 font-light">{text}</p>
       </div>
     </motion.div>
   );

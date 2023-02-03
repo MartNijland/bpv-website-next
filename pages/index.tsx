@@ -9,6 +9,15 @@ import Informatie, {
 import BpvTaakEen, {
   queryFragment as bpvtaakeenQueryFragment,
 } from "../components/BpvTaakEen";
+import BpvTaakTwee, {
+  queryFragment as bpvtaakTweeQueryFragment,
+} from "../components/BpvTaakTwee";
+import Conclusie, {
+  queryFragment as ConclusieQueryFragment,
+} from "../components/Conclusie";
+import Slotwoord, {
+  queryFragment as SlotwoordQueryFragment,
+} from "../components/Slotwoord";
 import KlantenProducten from "../components/KlantenProducten";
 import Products from "../components/Products";
 import { motion, useScroll } from "framer-motion";
@@ -16,6 +25,7 @@ import OrgChart from "../components/OrgChart";
 import CursorAnimation from "../components/CursorAnimation";
 import { useEffect, useState, CSSProperties } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
+
 
 const fetchGraphQL = async (query: string, variables: object = {}) => {
   const res = await global.fetch("https://martnijland.wiredev.nl/api/", {
@@ -46,6 +56,9 @@ export const getServerSideProps = async () => {
           ${heroQueryFragment}
           ${informatieQueryFragment}
           ${bpvtaakeenQueryFragment}
+          ${bpvtaakTweeQueryFragment}
+          ${ConclusieQueryFragment}
+          ${SlotwoordQueryFragment}
         }
       }
     }
@@ -68,7 +81,7 @@ const Home: NextPage = ({ data }: any) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 200);
   }, []);
 
   const override: CSSProperties = {
@@ -89,13 +102,10 @@ const Home: NextPage = ({ data }: any) => {
         />
       ) : (
         <div>
-          <CursorAnimation />
 
           <Head>
             <title>{title}</title>
           </Head>
-
-          <Headers />
 
           <section id="hero">
             <Hero {...data.entry} />
@@ -109,16 +119,24 @@ const Home: NextPage = ({ data }: any) => {
             <KlantenProducten />
           </section>
 
-          <section id="products">
-            <Products />
-          </section>
-
-          <section>
+          <section id="organogram">
             <OrgChart />
           </section>
 
-          <section>
+          <section id="bpvtaken">
             <BpvTaakEen {...data.entry} />
+          </section>
+
+          <section>
+            <BpvTaakTwee {... data.entry}/>
+          </section>
+
+          <section id="conclusie">
+            <Conclusie {... data.entry}/>
+          </section>
+
+          <section id="slotwoord">
+          <Slotwoord {... data.entry}/>
           </section>
         </div>
       )}

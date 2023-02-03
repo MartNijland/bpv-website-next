@@ -59,10 +59,10 @@ const OrgChart = (props: Props) => {
       </h3>
       <div className="h-screen relative  flex overflow-hidden flex-row max-w-full justify-center mx-auto items-center top-36 xl:top-64">
         <svg className=" w-full h-full" viewBox="0 0 1000 1000">
-          <Person cx={650} cy={100} name="Harry" job="Eindbaas" />
-          <Person cx={350} cy={100} name="Harry" job="Eindbaas" />
-          <Person cx={900} cy={300} name="Twan Pastoor" job="CTO" />
-          <Person cx={900} cy={500} name="Twan Pastoor" job="CTO" />
+          <Person cx={650} cy={100} name="Twan Pastoor" job="CEO/FOUNDER" />
+          <Person cx={350} cy={100} name="Niek Pots" job="Managing Director" />
+          <Person cx={900} cy={300} name="Marten Jacobs" job="CTO" />
+          <Person cx={900} cy={500} name="Developement" job="Team" />
           <Person
             cx={500}
             cy={300}
@@ -72,11 +72,11 @@ const OrgChart = (props: Props) => {
           <Person
             cx={500}
             cy={500}
-            name="Mark Reinderink"
-            job="Creative Director"
+            name="Creative"
+            job="Team"
           />
           <Person cx={100} cy={300} name="Niek Pots" job="Managing Director" />
-          <Person cx={100} cy={500} name="Niek Pots" job="Managing Director" />
+          <Person cx={100} cy={500} name="project owners" job="Team" />
           <motion.path
             initial={{ stroke: "grey" }}
             transition={{ duration: 0.1 }}

@@ -24,8 +24,6 @@ body {
   
     --background: var(--white);
     --accent: var(--black);
-
-    cursor:none;
     overflow:hidden;
 }
 
@@ -48,7 +46,6 @@ body {
     border: none;
     background: #000000;
     transform: scale(0.5); 
-    overflow: hidden;
 }
 
 .htmlScreen{
